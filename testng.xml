@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <parameter name="browser" value=""/>-->
+        <suite-files>
+            <suite-file path="all_scenarios.xml"/>
+            <suite-file path="nagative_login_scenarios.xml"/>
+        </suite-files>
+</suite>

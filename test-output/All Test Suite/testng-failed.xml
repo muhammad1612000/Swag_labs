@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value=""/>
+  <listeners>
+    <listener class-name="listener.Mylistener"/>
+  </listeners>
+  <test thread-count="5" name="add_to_cart_with_invalid(failed)">
+    <classes>
+      <class name="testcases.T02_add_to_cart">
+        <methods>
+          <include name="defineSuiteElements"/>
+          <include name="add_to_cart_invalid"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="setupdriver"/>
+        </methods>
+      </class> <!-- testcases.T02_add_to_cart -->
+    </classes>
+  </test> <!-- add_to_cart_with_invalid(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
