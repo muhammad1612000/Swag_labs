@@ -1,7 +1,7 @@
 # swag labs
 
-![XYZ Bank Logo]
-(https://camo.githubusercontent.com/af5be8f3d9366913bb555d9bc0b83392d6e03e63184cedc7e59654f6414287d6/68747470733a2f2f7777772e736175636564656d6f2e636f6d2f76312f696d672f4c6f67696e5f426f745f677261706869632e706e67)
+![Swag labs Logo]
+https://camo.githubusercontent.com/af5be8f3d9366913bb555d9bc0b83392d6e03e63184cedc7e59654f6414287d6/68747470733a2f2f7777772e736175636564656d6f2e636f6d2f76312f696d672f4c6f67696e5f426f745f677261706869632e706e67
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ swag labs  is a  commericial  application that provides various products  and fe
 
 ## Installation
 
-To set up the XYZ Bank application locally, follow these steps:
+To set up the swag labs website locally, follow these steps:
 
 1. Clone the repository:
 *   git clone (https://github.com/muhammad1612000/Swag_labs/tree/main)
@@ -39,10 +39,9 @@ To set up the XYZ Bank application locally, follow these steps:
 *   npm start
 
 ## Usage
-* User Guide: Refer to the User Guide for detailed information on how to use the XYZ Bank application.
-
+* User Guide: Refer to the User Guide for detailed information on how to use the swag labs website .
 ## Contributing
-* We welcome contributions from the community. To contribute to XYZ Bank, follow these steps:
+* We welcome contributions from the community. To contribute to swag labs , follow these steps:
 
 ## Fork the repository.
 * Create a new branch for your feature or bug fix.
