@@ -1,6 +1,7 @@
 # swag labs
 
-![XYZ Bank Logo]([https://static.vecteezy.com/system/resources/thumbnails/009/020/508/small/xyz-logo-xyz-letter-xyz-letter-logo-design-initials-xyz-logo-linked-with-circle-and-uppercase-monogram-logo-xyz-typography-for-technology-business-and-real-estate-brand-vector.jpg](https://logowik.com/content/uploads/images/sauce-labs6611.jpg))
+![XYZ Bank Logo]
+(https://camo.githubusercontent.com/af5be8f3d9366913bb555d9bc0b83392d6e03e63184cedc7e59654f6414287d6/68747470733a2f2f7777772e736175636564656d6f2e636f6d2f76312f696d672f4c6f67696e5f426f745f677261706869632e706e67)
 
 ## Table of Contents
 
