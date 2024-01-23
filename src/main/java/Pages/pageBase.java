@@ -13,8 +13,6 @@ public class pageBase {
         return  new WebDriverWait (driver,20);
     }
 
-
-
     // ToDO long explicit wait
     public static WebDriverWait longwait (WebDriver driver){
         return  new WebDriverWait (driver,50);

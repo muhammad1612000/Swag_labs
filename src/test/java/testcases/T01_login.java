@@ -4,6 +4,7 @@ import Pages.P0_login;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import retry_test.Retry;
 import util.Utility;
 
@@ -16,6 +17,8 @@ import static util.Utility.getSingleJsonData;
 
 
 public class T01_login extends Testbase{
+
+    // ToDo : use json as data  driven
    static String name;
 
     static {
@@ -74,6 +77,9 @@ public class T01_login extends Testbase{
         new P0_login(driver).fill_username(name).fill_password(password).Press_login();
        // shortwait(driver).until(ExpectedConditions.);
         captureScreenshot (driver,"P_login");
+        SoftAssert softAssert= new SoftAssert();
+        softAssert.assertEquals(new P0_login(driver).retrun_header_value(),"Products");
+        softAssert.assertAll();
     }
     @Test(priority = 2 , description = "login with valid username and  empty password ")
     public void login_with_empty_password() {

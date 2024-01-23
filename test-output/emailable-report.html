@@ -9,20 +9,47 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">All Test Suite</th></tr>
-<tr><td><a href="#t0">login_with_valid_data</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,539</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">add_to_cart_with_invalid</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,175</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">14,714</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">login_with_valid_data</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,327</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">add_to_cart_with_valid_data</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,025</td><td></td><td></td></tr>
+<tr><td><a href="#t2">add_to_cart_with_invalid_data</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,052</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">comparing item </a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,005</td><td></td><td></td></tr>
+<tr><td><a href="#t4"> making order </a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,294</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5"> reset cart  </a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,695</td><td></td><td></td></tr>
+<tr><td><a href="#t6"> logout process  </a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,354</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">26,752</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">login_with_valid_data &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.T01_login</td><td><a href="#m0">login_with_valid_data</a></td><td rowspan="1">1705855666117</td><td rowspan="1">2235</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">add_to_cart_with_invalid &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.T02_add_to_cart</td><td><a href="#m1">add_to_cart_invalid</a></td><td rowspan="1">1705855673094</td><td rowspan="1">1650</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">login_with_valid_data &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.T01_login</td><td><a href="#m0">login_with_valid_data</a></td><td rowspan="1">1705874917375</td><td rowspan="1">1277</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">add_to_cart_with_valid_data &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.T02_add_to_cart</td><td><a href="#m1">add_to_cart_valid</a></td><td rowspan="1">1705874920713</td><td rowspan="1">1107</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">add_to_cart_with_invalid_data &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.T02_add_to_cart</td><td><a href="#m2">add_to_cart_invalid</a></td><td rowspan="1">1705874923710</td><td rowspan="1">883</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">comparing item  &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.T03_item_action</td><td><a href="#m3">checking_item_header_name</a></td><td rowspan="1">1705874927497</td><td rowspan="1">1179</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4"> making order  &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.T04_make_order</td><td><a href="#m4">making_order_with_blocking_scenraio</a></td><td rowspan="1">1705874930691</td><td rowspan="1">2400</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4"> reset cart   &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.T05_reset_button</td><td><a href="#m5">reset_cart</a></td><td rowspan="1">1705874935039</td><td rowspan="1">1843</td></tr></tbody>
+<tbody id="t6"><tr><th colspan="4"> logout process   &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.T06_logout</td><td><a href="#m6">logout_scenario</a></td><td rowspan="1">1705874938651</td><td rowspan="1">2585</td></tr></tbody>
 </table>
 <h2>login_with_valid_data</h2><h3 id="m0">testcases.T01_login#login_with_valid_data</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>add_to_cart_with_invalid</h2><h3 id="m1">testcases.T02_add_to_cart#add_to_cart_invalid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+<h2>add_to_cart_with_valid_data</h2><h3 id="m1">testcases.T02_add_to_cart#add_to_cart_valid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>add_to_cart_with_invalid_data</h2><h3 id="m2">testcases.T02_add_to_cart#add_to_cart_invalid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
 	expected [remove] but found [Add to cart]
-	at testcases.T02_add_to_cart.add_to_cart_invalid(T02_add_to_cart.java:23)
+	at testcases.T02_add_to_cart.add_to_cart_invalid(T02_add_to_cart.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>comparing item </h2><h3 id="m3">testcases.T03_item_action#checking_item_header_name</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Sauce Labs Fleece Jacket] but found [ITEM NOT FOUND]
+	at testcases.T03_item_action.checking_item_header_name(T03_item_action.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2> making order </h2><h3 id="m4">testcases.T04_make_order#making_order_with_blocking_scenraio</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at testcases.T04_make_order.making_order_with_blocking_scenraio(T04_make_order.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2> reset cart  </h2><h3 id="m5">testcases.T05_reset_button#reset_cart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2> logout process  </h2><h3 id="m6">testcases.T06_logout#logout_scenario</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

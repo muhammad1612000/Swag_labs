@@ -54,7 +54,7 @@ public class Mylistener implements ITestListener {
       //  WebDriver driver=new ChromeDriver();
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         Date currntDate=new Date();
-        String screenshotName="Failed"+currntDate.toString().replace(" ","-").replace(":","-");
+        String screenshotName="Failed "+currntDate.toString().replace(" ","-").replace(":","-");
         try {
             FileHandler.copy(takesScreenshot.getScreenshotAs(OutputType.FILE), new File(System.getProperty("user.dir")
                     + "/src/test/resources/Screenshots/"+ screenshotName + ".png"));

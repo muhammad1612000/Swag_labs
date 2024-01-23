@@ -12,13 +12,5 @@
             </class>
         </classes>
     </test>
-    <!--    <test name="login with CHARACTER">-->
-    <!--        <classes>-->
-    <!--            <class name="testcases.T02_Login2">-->
-    <!--                <methods>-->
-    <!--                    <include name="login_with_valid_data"/>-->
-    <!--                </methods>-->
-    <!--            </class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+
 </suite>

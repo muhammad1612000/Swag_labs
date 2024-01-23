@@ -15,7 +15,16 @@
             </class>
         </classes>
     </test>
-    <test name="add_to_cart_with_invalid">
+    <test name="add_to_cart_with_valid_data">
+        <classes>
+            <class name="testcases.T02_add_to_cart">
+                <methods>
+                    <include name="add_to_cart_valid"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="add_to_cart_with_invalid_data">
         <classes>
             <class name="testcases.T02_add_to_cart">
                 <methods>
@@ -24,6 +33,41 @@
             </class>
         </classes>
     </test>
-
+    <test name="comparing item ">
+        <classes>
+            <class name="testcases.T03_item_action">
+                <methods>
+                    <include name="checking_item_header_name"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name=" making order ">
+        <classes>
+            <class name="testcases.T04_make_order">
+                <methods>
+                    <include name="making_order_with_blocking_scenraio"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name=" reset cart  ">
+        <classes>
+            <class name="testcases.T05_reset_button">
+                <methods>
+                    <include name="reset_cart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name=" logout process  ">
+        <classes>
+            <class name="testcases.T06_logout">
+                <methods>
+                    <include name="logout_scenario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
 </suite>

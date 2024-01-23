@@ -5,7 +5,7 @@
   <listeners>
     <listener class-name="listener.Mylistener"/>
   </listeners>
-  <test thread-count="5" name="add_to_cart_with_invalid(failed)">
+  <test thread-count="5" name="add_to_cart_with_invalid_data(failed)">
     <classes>
       <class name="testcases.T02_add_to_cart">
         <methods>
@@ -18,5 +18,33 @@
         </methods>
       </class> <!-- testcases.T02_add_to_cart -->
     </classes>
-  </test> <!-- add_to_cart_with_invalid(failed) -->
+  </test> <!-- add_to_cart_with_invalid_data(failed) -->
+  <test thread-count="5" name="comparing item (failed)">
+    <classes>
+      <class name="testcases.T03_item_action">
+        <methods>
+          <include name="defineSuiteElements"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="checking_item_header_name"/>
+          <include name="setupdriver"/>
+        </methods>
+      </class> <!-- testcases.T03_item_action -->
+    </classes>
+  </test> <!-- comparing item (failed) -->
+  <test thread-count="5" name=" making order (failed)">
+    <classes>
+      <class name="testcases.T04_make_order">
+        <methods>
+          <include name="making_order_with_blocking_scenraio"/>
+          <include name="defineSuiteElements"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="setupdriver"/>
+        </methods>
+      </class> <!-- testcases.T04_make_order -->
+    </classes>
+  </test> <!--  making order (failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

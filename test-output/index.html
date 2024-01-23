@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">7 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,6 +107,16 @@
                         <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T02_add_to_cart" class="method navigator-link" hash-for-method="add_to_cart_invalid">add_to_cart_invalid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T03_item_action" class="method navigator-link" hash-for-method="checking_item_header_name">checking_item_header_name</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T04_make_order" class="method navigator-link" hash-for-method="making_order_with_blocking_scenraio">making_order_with_blocking_scenraio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
@@ -118,7 +128,22 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T02_add_to_cart" class="method navigator-link" hash-for-method="add_to_cart_valid">add_to_cart_valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T01_login" class="method navigator-link" hash-for-method="login_with_valid_data">login_with_valid_data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T06_logout" class="method navigator-link" hash-for-method="logout_scenario">logout_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="testcases.T05_reset_button" class="method navigator-link" hash-for-method="reset_cart">reset_cart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -136,6 +161,31 @@
           <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">testcases.T03_item_action</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checking_item_header_name">
+                  </a> <!-- checking_item_header_name -->
+                  <span class="method-name">checking_item_header_name</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Sauce Labs Fleece Jacket] but found [ITEM NOT FOUND]
+	at testcases.T03_item_action.checking_item_header_name(T03_item_action.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(comparing the item information )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">testcases.T02_add_to_cart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -146,7 +196,7 @@
                   <span class="method-name">add_to_cart_invalid</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	expected [remove] but found [Add to cart]
-	at testcases.T02_add_to_cart.add_to_cart_invalid(T02_add_to_cart.java:23)
+	at testcases.T02_add_to_cart.add_to_cart_invalid(T02_add_to_cart.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
@@ -158,6 +208,65 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.T04_make_order</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="making_order_with_blocking_scenraio">
+                  </a> <!-- making_order_with_blocking_scenraio -->
+                  <span class="method-name">making_order_with_blocking_scenraio</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at testcases.T04_make_order.making_order_with_blocking_scenraio(T04_make_order.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(comparing the item information )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.T02_add_to_cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_to_cart_valid">
+                  </a> <!-- add_to_cart_valid -->
+                  <span class="method-name">add_to_cart_valid</span>
+                  <em>
+(add to cart with invalid scenario)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.T06_logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout_scenario">
+                  </a> <!-- logout_scenario -->
+                  <span class="method-name">logout_scenario</span>
+                  <em>
+(check the funtionality of logout button and if item will be deleted or not from cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -171,6 +280,23 @@
                   <span class="method-name">login_with_valid_data</span>
                   <em>
 (login with valid username and password )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.T05_reset_button</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reset_cart">
+                  </a> <!-- reset_cart -->
+                  <span class="method-name">reset_cart</span>
+                  <em>
+(check the funtionality of reset button )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,7 +324,16 @@
       &lt;/class&gt; &lt;!-- testcases.T01_login --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- login_with_valid_data --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;add_to_cart_with_invalid&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;add_to_cart_with_valid_data&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.T02_add_to_cart&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;add_to_cart_valid&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.T02_add_to_cart --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- add_to_cart_with_valid_data --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;add_to_cart_with_invalid_data&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.T02_add_to_cart&quot;&gt;
         &lt;methods&gt;
@@ -206,7 +341,43 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testcases.T02_add_to_cart --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- add_to_cart_with_invalid --&gt;
+  &lt;/test&gt; &lt;!-- add_to_cart_with_invalid_data --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;comparing item &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.T03_item_action&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checking_item_header_name&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.T03_item_action --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- comparing item  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot; making order &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.T04_make_order&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;making_order_with_blocking_scenraio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.T04_make_order --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!--  making order  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot; reset cart  &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.T05_reset_button&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;reset_cart&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.T05_reset_button --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!--  reset cart   --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot; logout process  &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.T06_logout&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;logout_scenario&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.T06_logout --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!--  logout process   --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,7 +392,22 @@
                 <span class="test-name">login_with_valid_data (1 class)</span>
               </li>
               <li>
-                <span class="test-name">add_to_cart_with_invalid (1 class)</span>
+                <span class="test-name">add_to_cart_with_valid_data (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">add_to_cart_with_invalid_data (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">comparing item  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name"> making order  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name"> reset cart   (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name"> logout process   (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,20 +433,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login_with_valid_data')
-data.setCell(0, 2, 'testcases.T01_login')
-data.setCell(0, 3, 2235);
+data.setCell(0, 1, 'logout_scenario')
+data.setCell(0, 2, 'testcases.T06_logout')
+data.setCell(0, 3, 2585);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'add_to_cart_invalid')
-data.setCell(1, 2, 'testcases.T02_add_to_cart')
-data.setCell(1, 3, 1650);
+data.setCell(1, 1, 'making_order_with_blocking_scenraio')
+data.setCell(1, 2, 'testcases.T04_make_order')
+data.setCell(1, 3, 2400);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'reset_cart')
+data.setCell(2, 2, 'testcases.T05_reset_button')
+data.setCell(2, 3, 1843);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login_with_valid_data')
+data.setCell(3, 2, 'testcases.T01_login')
+data.setCell(3, 3, 1277);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checking_item_header_name')
+data.setCell(4, 2, 'testcases.T03_item_action')
+data.setCell(4, 3, 1179);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'add_to_cart_valid')
+data.setCell(5, 2, 'testcases.T02_add_to_cart')
+data.setCell(5, 3, 1107);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'add_to_cart_invalid')
+data.setCell(6, 2, 'testcases.T02_add_to_cart')
+data.setCell(6, 3, 883);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -275,9 +481,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.T02_add_to_cart</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">add_to_cart_invalid</span>
+                <br/>
+                <span class="ignored-method-name">add_to_cart_valid</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.T01_login</span>
               <div class="ignored-methods-div">
@@ -285,13 +500,13 @@ return data;
                 <br/>
                 <span class="ignored-method-name">login_with_empty_password</span>
                 <br/>
-                <span class="ignored-method-name">login_with_invalid_username_and_invalid_password</span>
+                <span class="ignored-method-name">login_with_invalid_username_and_valid_password</span>
                 <br/>
                 <span class="ignored-method-name">login_with_empty_username_and_password</span>
                 <br/>
-                <span class="ignored-method-name">login_with_empty_username</span>
+                <span class="ignored-method-name">login_with_invalid_username_and_invalid_password</span>
                 <br/>
-                <span class="ignored-method-name">login_with_invalid_username_and_valid_password</span>
+                <span class="ignored-method-name">login_with_empty_username</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -303,7 +518,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.T02_add_to_cart</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.T06_logout</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">defineSuiteElements</span>
                 <span class="method-start">0 ms</span>
@@ -313,44 +528,140 @@ return data;
               <div class="chronological-class-name">testcases.T01_login</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupdriver()</span>
-                <span class="method-start">800 ms</span>
+                <span class="method-start">269 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login_with_valid_data</span>
-                <span class="method-start">6620 ms</span>
+                <span class="method-start">3124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=login_with_valid_data status=SUCCESS method=T01_login.login_with_valid_data()[pri:1...)</span>
-                <span class="method-start">9001 ms</span>
+                <span class="method-start">4477 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9034 ms</span>
+                <span class="method-start">4501 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.T02_add_to_cart</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupdriver()</span>
-                <span class="method-start">9570 ms</span>
+                <span class="method-start">4630 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">add_to_cart_valid</span>
+                <span class="method-start">6462 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=add_to_cart_valid status=SUCCESS method=T02_add_to_cart.add_to_cart_valid()[pri:1, ...)</span>
+                <span class="method-start">7570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">7573 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">setupdriver()</span>
+                <span class="method-start">7658 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">add_to_cart_invalid</span>
-                <span class="method-start">13597 ms</span>
+                <span class="method-start">9459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=add_to_cart_invalid status=FAILURE method=T02_add_to_cart.add_to_cart_invalid()[pri...)</span>
-                <span class="method-start">15536 ms</span>
+                <span class="method-start">10559 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">15538 ms</span>
+                <span class="method-start">10562 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.T03_item_action</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupdriver()</span>
+                <span class="method-start">10718 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checking_item_header_name</span>
+                <span class="method-start">13246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=checking_item_header_name status=FAILURE method=T03_item_action.checking_item_heade...)</span>
+                <span class="method-start">14637 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">14639 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.T04_make_order</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupdriver()</span>
+                <span class="method-start">14725 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">making_order_with_blocking_scenraio</span>
+                <span class="method-start">16440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=making_order_with_blocking_scenraio status=FAILURE method=T04_make_order.making_ord...)</span>
+                <span class="method-start">18934 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18936 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.T05_reset_button</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupdriver()</span>
+                <span class="method-start">19024 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">reset_cart</span>
+                <span class="method-start">20788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=reset_cart status=SUCCESS method=T05_reset_button.reset_cart()[pri:1, instance:test...)</span>
+                <span class="method-start">22632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">22634 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.T06_logout</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupdriver()</span>
+                <span class="method-start">22722 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logout_scenario</span>
+                <span class="method-start">24400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=logout_scenario status=SUCCESS method=T06_logout.logout_scenario()[pri:1, instance:...)</span>
+                <span class="method-start">26991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">26994 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15759 ms</span>
+                <span class="method-start">27081 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
